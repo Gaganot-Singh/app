@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
   return (
     <>
-    <div className="flex flex-col justify-center items-center h-full fixed max-h-96 m-10">
+    <div className="flex flex-col justify-center items-center h-full lg:fixed max-h-96 m-10">
       <div className="flex items-center justify-center mb-4">
         <a href="https://github.com/your-github-profile" target="_blank" rel="noopener noreferrer">
           <img src="./github-logo.svg" alt="GitHub" className="w-8 h-8 mr-4" />
@@ -18,7 +18,8 @@ const Header = () => {
       
       
       <div className="items-center justify-center"> 
-      <h2 className="text-4xl font-bold mb-4 text-center">Your Name</h2>
+      <h1 class="text-2xl md:text-4xl pl-2 my-2 border-l-4  font-sans font-bold border-teal-400"> GAGANJOT SINGH </h1>
+      <br/>
       <p className="text-center"> Full Stack Developer </p>
       <br/>
       <br/>

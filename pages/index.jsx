@@ -28,13 +28,20 @@ const projects = [
 
 const HomePage = () => {
   return (
-      <div className="grid w-80% mt-60">
-        
-        
-      <div className="mx-2" >
+      <div className="grid w-80% lg:mt-60">
+      <div className="mx-2 justify-center items-center" >
        <h1 class="mb-4 text-4xl font-bold text-center">
-        My Portfolio
+        About Me
        </h1>
+       <br />
+       <img
+          src="./intro.png"
+          alt="Intro Image"
+          className="h-32 w-32 mx-auto w-sm ease-in-out transition-all duration-300 rounded-md cursor-pointer filter grayscale hover:grayscale-0 hover:scale-105 "
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        />
+        <br />
        <p className="ml-2 mr-2 text-justify"
        data-aos="fade-up"
        data-aos-duration="2000">
@@ -61,7 +68,7 @@ const HomePage = () => {
 
         <div className="mx-2 mt-80 mb-40">
       <h1 class="mb-4 text-4xl font-bold text-center">
-        Technical Projects
+        Experience
         </h1>
         <ExperienceCard
         companyName="Seneca Polytechnic – North York, ON"
