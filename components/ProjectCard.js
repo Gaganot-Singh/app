@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const ProjectCard = ({ title, description, image, link, skills }) => {
+const ProjectCard = ({ title, features, image, link, skills }) => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -13,12 +13,12 @@ const ProjectCard = ({ title, description, image, link, skills }) => {
     <div
       className="grid sm:grid-cols-5 sm:gap-4 md:gap-4 justify-center"
       data-aos="fade-left"
-      data-aos-duration="2000"
+      data-aos-duration="1500"
     >
       <div
         className="md:col-span-2 filter-none px-4 py-6 justify-center items-center"
         data-aos="fade-up"
-        data-aos-duration="2000"
+        data-aos-duration="1500"
       >
         <img
           src={image}
@@ -28,7 +28,13 @@ const ProjectCard = ({ title, description, image, link, skills }) => {
       </div>
       <div className="md:col-span-3 row-span-1 text-left px-4 py-6">
         <h3 className="text-xl font-bold mb-2">{title}</h3>
-        <p className="text-gray">{description}</p>
+        <ul className="list-disc ml-6">
+          {features.map((feature, index) => (
+            <li key={index} className="text-gray-700 mb-2">
+              {feature}
+            </li>
+          ))}
+        </ul>
         <br/>
 
         

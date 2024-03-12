@@ -7,14 +7,28 @@ import ExperienceCard from "@/components/experienceCard";
 const projects = [
   {
     title: "Web Portfolio with Next.js and Tailwind CSS",
-    description: "Developed a responsive portfolio web application using Next.js and Tailwind CSS. The portfolio showcases various projects, skills, and experiences in an organized and visually appealing manner. Smooth animations were implemented throughout the app using the AOS library, enhancing user experience and engagement.The portfolio features a unique layout with two components: a fixed header on the left-hand side and a movable right portion containing all personal information and project details.",
+    features: [
+      'Responsive portfolio web application using Next.js and Tailwind CSS',
+      'Organized and visually appealing layout',
+      'Smooth animations using AOS library',
+      'Unique layout with fixed header on left-hand side and movable right portion',
+    ],
     image: "./project1.png",
     link: "https://gaganjot-singh.vercel.app/",
     skills: ["Next.js", "Tailwind CSS", "AOS Library", "Responsive Design", "UI/UX Design"]
     },
     {
       title: "TOY STORE",
-      description: " Created project by incorporating the EJS template engine to render data from postgres databse. Additionally, integrated a random quote feature from the 'Quotable' API. Implemented partial views for common HTML elements like the navbar. Rendered data sets using EJS and incorporated a table to display toys data fetched from a Postgres database. Added functionality to create, update, and delete Lego sets. Integrated user account management using MongoDB Atlas for user authentication and sessions. Implemented login history functionality to track user logins. Utilized Tailwind CSS framework with the DaisyUI plugin for responsive and aesthetically pleasing UI design.",
+      features: [
+        "Incorporated EJS template engine for rendering data from Postgres database",
+        "Integrated random quote feature from 'Quotable' API",
+        "Implemented partial views for common HTML elements like navbar",
+        "Rendered data sets using EJS, including a table for displaying toys data from Postgres",
+        "Added functionality for creating, updating, and deleting toys",
+        "Integrated user account management using MongoDB Atlas for authentication and sessions",
+        "Implemented login history tracking for user logins",
+        "Utilized Tailwind CSS framework with DaisyUI plugin for responsive and aesthetically pleasing UI design"
+      ],
       image: "./project1.png",
       link: "https://toy-store-49to.onrender.com/",
       skills: [
@@ -37,14 +51,20 @@ const projects = [
       ,
   {
     title: "MOVIE SEARCH API",
-    description: "This project is a movie search API developed using Express.js framework with Redis cache integration. The API provides various endpoints to search for movies by text, sort results by popularity, release date, or votes, and retrieve detailed information about a movie by its ID. The project is designed to function seamlessly both online and offline, with a caching mechanism implemented using Redis to store detailed responses from The Movie Database (MovieDB). This allows the API to serve cached data when offline, enhancing user experience and reducing reliance on external APIs.",
+    features: [
+      "Web application for managing students and courses developed.",
+      "Implemented functionalities for adding courses and managing students.",
+      "Utilized Sequelize with PostgreSQL for database management.",
+      "Integrated HTML forms with validation for adding courses and students.",
+      "Designed user-friendly UI using HTML, CSS, and JavaScript."
+    ],
     image: "./project2.png",
     link: "https://github.com/Gaganot-Singh/api-movie-app",
     skills:  ["JavaScript (Node.js)", "Express", "Redis Client", "Axios", "Redis caching mechanism"]
   },
   {
     title: "Student and Course Management System",
-    description: "Developed a web application for managing students and courses. Implemented functionalities to add courses, add students to each course, and remove students from courses. Utilized Sequelize for database management with PostgreSQL. Integrated HTML forms for adding courses and students with validation. Designed the UI using HTML, CSS, and JavaScript for a user-friendly experience.",
+    features: ["Developed a web application for managing students and courses. Implemented functionalities to add courses, add students to each course, and remove students from courses. Utilized Sequelize for database management with PostgreSQL. Integrated HTML forms for adding courses and students with validation. Designed the UI using HTML, CSS, and JavaScript for a user-friendly experience."],
     image: "./project2.png",
     link: "https://enrollment-system-qe6k.onrender.com/",
     skills: [
@@ -77,13 +97,13 @@ const HomePage = () => {
           data-aos-duration="2000"
         />
         <br />
-       <p className="ml-2 mr-2 text-justify text-base font-semibold"
+       <p className="ml-2 mr-2 text-justify text-lg font-semibold"
        data-aos="fade-up"
        data-aos-duration="1000">
-       Hey there! I am Gaganjot Singh, an enthusiastic full-stack developer currently honing my skills at Seneca Polytechnic. As a dedicated student pursuing Computer Programming and Analysis, I have immersed myself in the dynamic realm of coding and technology. My commitment to innovation shines through my proactive engagement in various projects and coursework. In my academic journey at Seneca, Toronto, pursuing Computer Programming and Analysis, I have consistently excelled, earning a place on the President&apos;s Honour List in both semester 1 and semester 3. I am currently honing my skills through practical application in real-world projects and coursework. With a diverse skill set encompassing languages like C++, JavaScript, and Python, coupled with hands-on experience in web development, I am passionate about creating responsive, user-friendly applications that drive impactful solutions. Whether it is crafting sleek front-end designs or optimizing back-end functionality, I thrive on tackling challenges and turning ideas into reality.  If you are looking for a dedicated and versatile developer with ambition, I invite you to explore my portfolio and discover the projects that showcase my commitment to the world of programming.
+       Hi there! I am Gaganjot Singh, an enthusiastic full-stack developer currently studying at Seneca Polytechnic in Toronto. I excel in languages like JavaScript, Python and C++, with a focus on creating responsive, user-friendly applications. I have achieved a 4.0 GPA in two consecutive semesters, earning a place on the President&apos;s Honour List twice. With a diverse skill set and hands-on experience in web development, I am passionate about creating responsive, user-friendly applications that drive impactful solutions. Check out my portfolio for more!
        <br/>
        <br/>
-       <strong> SKILLS: </strong> Excel, PowerPoint, Data Entry, SQL, Python, C, C++, HTML, CSS, JavaScript, Git, Bootstrap, Tailwind CSS, React Next JS, MongoDb
+       <strong> SKILLS: </strong> SQL, Python, C, C++, HTML, CSS, JavaScript, Git, Bootstrap, Tailwind CSS, React Next JS, MongoDb, Excel, PowerPoint, Data Entry
        </p>
        
        <br />
@@ -98,7 +118,7 @@ const HomePage = () => {
         Technical Projects
         </h1>
         {projects.map((project) => (
-          <ProjectCard title={project.title} image={project.image}  link={project.link} description={project.description} key={project.title} skills={project.skills} />
+          <ProjectCard title={project.title} image={project.image}  link={project.link} features={project.features} key={project.title} skills={project.skills} />
         ))}
         <br />
         </div>
@@ -122,13 +142,13 @@ const HomePage = () => {
       />
       <ExperienceCard
         companyName="Gumber Metal Works"
-        position="IT coordinator (Trainee)"
+        position="Jr. Web Developer (Trainee)"
         duration="Dec’21 to July’22"
         responsibilities={[
-          "Collaborated with the development team to gather requirements and create a comprehensive plan for the web catalogue.",
-          "Assisted in the implementation of search and filter functionality to enhance user experience and ease of navigation.",
-          "Coordinated with the marketing team to ensure the web catalogue aligned with the company's branding guidelines.",
-          "Actively participated in meetings and discussions to provide insights and suggestions for improving the web catalogue's functionality and user experience."
+          "Collaborated with the development team utilizing React framework to conceptualize and execute a dynamic web catalogue.",
+          "Contributed to the implementation of search and filter functionalities, leveraging JSX, components, and layouts to optimize user navigation.",
+          "Ensured alignment with company branding guidelines through coordination with the marketing team.",
+          "Actively engaged in technical discussions and provided insights on enhancing web catalogue functionality and user experience."
         ]}
       />
       </div> 
