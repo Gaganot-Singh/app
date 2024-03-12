@@ -52,11 +52,10 @@ const projects = [
   {
     title: "MOVIE SEARCH API",
     features: [
-      "Web application for managing students and courses developed.",
-      "Implemented functionalities for adding courses and managing students.",
-      "Utilized Sequelize with PostgreSQL for database management.",
-      "Integrated HTML forms with validation for adding courses and students.",
-      "Designed user-friendly UI using HTML, CSS, and JavaScript."
+      "Movie search API developed using Express.js with Redis cache integration.",
+      "Endpoints for searching movies by text, sorting by popularity, release date, or votes.",
+      "Seamless online and offline functionality with Redis caching.",
+      "Improved user experience by serving cached data and Reduced reliance on external APIs.",
     ],
     image: "./project2.png",
     link: "https://github.com/Gaganot-Singh/api-movie-app",
@@ -64,7 +63,13 @@ const projects = [
   },
   {
     title: "Student and Course Management System",
-    features: ["Developed a web application for managing students and courses. Implemented functionalities to add courses, add students to each course, and remove students from courses. Utilized Sequelize for database management with PostgreSQL. Integrated HTML forms for adding courses and students with validation. Designed the UI using HTML, CSS, and JavaScript for a user-friendly experience."],
+    features: [
+      "Web application for managing students and courses developed.",
+      "Implemented functionalities for adding courses and managing students.",
+      "Utilized Sequelize with PostgreSQL for database management.",
+      "Integrated HTML forms with validation for adding courses and students.",
+      "Designed user-friendly UI using HTML, CSS, and JavaScript."
+    ],
     image: "./project2.png",
     link: "https://enrollment-system-qe6k.onrender.com/",
     skills: [
@@ -157,3 +162,8 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
+
+
+
+
