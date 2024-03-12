@@ -10,12 +10,11 @@ const Header = () => {
     <div className="flex flex-col justify-center items-center h-full lg:fixed max-h-96 m-10">
       <div className="flex items-center justify-center mb-4">
         <a href="https://github.com/Gaganot-Singh" target="_blank" rel="noopener noreferrer">
-          <img src="./github-logo.svg" alt="GitHub" className="w-12 h-12 mr-4" />
+          <img src="./github-logo.svg" alt="GitHub" className="w-10 h-10 mr-4" />
         </a>
         <a href="https://www.linkedin.com/in/gaganjot-singh-07ab15253?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BY%2BdTNUCGSGa0vS1zRqANlg%3D%3D" target="_blank" rel="noopener noreferrer">
-          <img src="./linkedin-logo.svg" alt="LinkedIn" className="w-12 h-12" />
+          <img src="./linkedin-logo.svg" alt="LinkedIn" className="w-10 h-10" />
         </a>
-        <br />
         <br />
         <br />
       </div>
@@ -24,7 +23,7 @@ const Header = () => {
       <img
         src="./profile_picture.jpg"
         alt="Profile Picture"
-        className="rounded-full w-64 h-64 border-2 border-gray-900"
+        className="rounded-full w-60 h-60 border-2 border-gray-900"
       />
     </div>
     <br/>
@@ -43,7 +42,7 @@ const Header = () => {
       
       <div className="mb-2 grid grid-cols-2">
         <div>
-        <a href="mailto:jotgumber2002@gmail.com">
+        <a href="mailto:jotgumber2002@gmail.com" target="_blank">
         <button type="button" className="px-7 py-4 text-base font-medium text-center inline-flex items-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
           <svg className="w-3.5 h-3.5 text-white me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
             <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>

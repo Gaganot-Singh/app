@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const ProjectCard = ({ title, description, image, link }) => {
+const ProjectCard = ({ title, description, image, link, skills }) => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -30,9 +30,23 @@ const ProjectCard = ({ title, description, image, link }) => {
         <h3 className="text-xl font-bold mb-2">{title}</h3>
         <p className="text-gray">{description}</p>
         <br/>
+
+        
+        {skills && (
+        <div>
+          {skills.map((skill, index) => (
+            <span key={index}> <strong>{skill} </strong> &nbsp; </span>
+          ))}
+        </div>
+        )}
+
+        
+        <br/>
+        <a href={link} target="_blank" rel="noreferrer">
         <button type="button" className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
           Visit Project
         </button>
+        </a>
       </div>
     </div>
   );
