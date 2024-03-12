@@ -30,7 +30,7 @@ const HomePage = () => {
   return (
       <div className="grid w-80% lg:mt-60">
       <div className="mx-2 justify-center items-center" >
-       <h1 class="mb-4 text-4xl font-bold text-center">
+       <h1 className="mb-4 text-4xl font-bold text-center">
         About Me
        </h1>
        <br />
@@ -55,7 +55,7 @@ const HomePage = () => {
 
        
        <div className="mx-2 mt-80">
-      <h1 class="mb-4 text-4xl font-bold text-center">
+      <h1 className="mb-4 text-4xl font-bold text-center">
         Technical Projects
         </h1>
         {projects.map((project) => (
@@ -67,7 +67,7 @@ const HomePage = () => {
 
 
         <div className="mx-2 mt-80 mb-40">
-      <h1 class="mb-4 text-4xl font-bold text-center">
+      <h1 className="mb-4 text-4xl font-bold text-center">
         Experience
         </h1>
         <ExperienceCard
