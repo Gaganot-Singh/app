@@ -3,24 +3,38 @@ import React from "react";
 const Header = () => {
   return (
     <>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     <div className="flex flex-col justify-center items-center h-full lg:fixed max-h-96 m-10">
       <div className="flex items-center justify-center mb-4">
-        <a href="https://github.com/your-github-profile" target="_blank" rel="noopener noreferrer">
-          <img src="./github-logo.svg" alt="GitHub" className="w-8 h-8 mr-4" />
+        <a href="https://github.com/Gaganot-Singh" target="_blank" rel="noopener noreferrer">
+          <img src="./github-logo.svg" alt="GitHub" className="w-12 h-12 mr-4" />
         </a>
-        <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer">
-          <img src="./linkedin-logo.svg" alt="LinkedIn" className="w-8 h-8" />
+        <a href="https://www.linkedin.com/in/gaganjot-singh-07ab15253?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BY%2BdTNUCGSGa0vS1zRqANlg%3D%3D" target="_blank" rel="noopener noreferrer">
+          <img src="./linkedin-logo.svg" alt="LinkedIn" className="w-12 h-12" />
         </a>
         <br />
         <br />
         <br />
       </div>
-      
+      <br/>
+      <div className="flex items-center justify-center">
+      <img
+        src="./profile_picture.jpg"
+        alt="Profile Picture"
+        className="rounded-full w-64 h-64 border-2 border-gray-900"
+      />
+    </div>
+    <br/>
       
       <div className="items-center justify-center"> 
       <h1 className="text-2xl md:text-4xl pl-2 my-2 border-l-4  font-sans font-bold border-teal-400"> GAGANJOT SINGH </h1>
       <br/>
+      <b>
       <p className="text-center"> Full Stack Developer </p>
+      </b>
       <br/>
       <br/>
       </div>
@@ -50,6 +64,10 @@ const Header = () => {
         </div>
       </div>
     </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     </>
   );
 };
