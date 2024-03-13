@@ -23,7 +23,7 @@ const ProjectCard = ({ title, features, image, link, skills }) => {
         <img
           src={image}
           alt={title}
-          className="h-auto w-sm ease-in-out transition-all duration-300 rounded-md cursor-pointer filter grayscale hover:grayscale-0 hover:scale-105"
+          className="h-auto w-sm ease-in-out transition-all duration-300 rounded-md cursor-pointer filter grayscale hover:grayscale-0 hover:scale-105 cursor-default"
         />
       </div>
       <div className="md:col-span-3 row-span-1 text-left px-4 py-6">

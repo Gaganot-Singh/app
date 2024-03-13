@@ -13,8 +13,8 @@ const projects = [
       'Smooth animations using AOS library',
       'Unique layout with fixed header on left-hand side and movable right portion',
     ],
-    image: "./project1.png",
-    link: "https://gaganjot-singh.vercel.app/",
+    image: "./portfolio.png",
+    link: "https://github.com/Gaganot-Singh/app",
     skills: ["Next.js", "Tailwind CSS", "AOS Library", "Responsive Design", "UI/UX Design"]
     },
     {
@@ -29,7 +29,7 @@ const projects = [
         "Implemented login history tracking for user logins",
         "Utilized Tailwind CSS framework with DaisyUI plugin for responsive and aesthetically pleasing UI design"
       ],
-      image: "./project1.png",
+      image: "./toystore.png",
       link: "https://toy-store-49to.onrender.com/",
       skills: [
       "Node.js",
@@ -57,7 +57,7 @@ const projects = [
       "Seamless online and offline functionality with Redis caching.",
       "Improved user experience by serving cached data and Reduced reliance on external APIs.",
     ],
-    image: "./project2.png",
+    image: "./movieapi.png",
     link: "https://github.com/Gaganot-Singh/api-movie-app",
     skills:  ["JavaScript (Node.js)", "Express", "Redis Client", "Axios", "Redis caching mechanism"]
   },
@@ -70,7 +70,7 @@ const projects = [
       "Integrated HTML forms with validation for adding courses and students.",
       "Designed user-friendly UI using HTML, CSS, and JavaScript."
     ],
-    image: "./project2.png",
+    image: "./enrollment.png",
     link: "https://enrollment-system-qe6k.onrender.com/",
     skills: [
       "Node.js",
@@ -97,7 +97,7 @@ const HomePage = () => {
        <img
           src="./intro.png"
           alt="Intro Image"
-          className="h-32 w-32 mx-auto w-sm ease-in-out transition-all duration-300 rounded-md cursor-pointer filter grayscale hover:grayscale-0 hover:scale-105 "
+          className="h-32 w-32 mx-auto w-sm ease-in-out transition-all duration-300 rounded-md cursor-pointer filter grayscale hover:grayscale-0 hover:scale-105 cursor-default"
           data-aos="fade-up"
           data-aos-duration="2000"
         />
