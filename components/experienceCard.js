@@ -10,12 +10,12 @@ const ExperienceCard = ({ companyName, position, duration, responsibilities }) =
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-lg mx-auto my-4 w-full max-w-md lg:max-w-full" data-aos="fade-left">
       <div className="px-6 py-4">
-        <div className="font-bold text-2xl mb-2">{companyName}</div>
-        <p className="text-gray-700 text-lg mb-2">{position}</p>
-        <p className="text-gray-700 text-lg mb-4">{duration}</p>
+        <div className="font-bold text-2xl mb-2">{position}</div>
+        <p className="text-gray-900 text-xl mb-2">{companyName}</p>
+        <p className="text-gray-900 text-lg mb-4">{duration}</p>
         <ul className="list-disc ml-6">
           {responsibilities.map((responsibility, index) => (
-            <li key={index} className="text-gray-700 mb-2">
+            <li key={index} className="text-gray-900 mb-2">
               {responsibility}
             </li>
           ))}
