@@ -6,7 +6,7 @@ import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   return (
-    <div className="min-h-screen flex flex-col scroll-smooth mx-auto overflow-hidden lg:max-w-full">
+    <div className="min-h-screen flex flex-col scroll-smooth overflow-hidden lg:max-w-full">
       <div className="hidden lg:flex">
         <div className="w-96 px-4 py-6 flex-col"> 
           <Header />
