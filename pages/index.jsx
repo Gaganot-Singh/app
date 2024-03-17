@@ -136,6 +136,14 @@ const HomePage = () => {
         </h1>
         <ExperienceCard
         companyName="Seneca Polytechnic – North York, ON"
+        position="Peer Tutor (Part Time)"
+        duration="Jan’24 to Present"
+        responsibilities={[
+          "Conduct one-on-one tutoring sessions for students in various courses, including Web Development (frontend and backend), Data Structures and Algorithms, Software Analysis and Design, JavaScript, Python, C, C++, SQL, MongoDB, Bash Scripting",
+        ]}
+      />
+        <ExperienceCard
+        companyName="Seneca Polytechnic – North York, ON"
         position="Supported Learning Groups Leader (Co-op tutor)"
         duration="Aug’23 to Dec,23"
         responsibilities={[
