@@ -108,8 +108,18 @@ const HomePage = () => {
        Hi there! I am Gaganjot Singh, an enthusiastic full-stack developer currently studying at Seneca Polytechnic in Toronto. I excel in languages like JavaScript, Python and C++, with a focus on creating responsive, user-friendly applications. I have achieved a 4.0 GPA in two consecutive semesters, earning a place on the President&apos;s Honour List twice. With a diverse skill set and hands-on experience in web development, I am passionate about creating responsive, user-friendly applications that drive impactful solutions. Check out my portfolio for more!
        <br/>
        <br/>
-       <strong> SKILLS: </strong> SQL, Python, C, C++, HTML, CSS, JavaScript, Git, Bootstrap, Tailwind CSS, React Next JS, MongoDb, Excel, PowerPoint, Data Entry
+       <strong> TECHNICAL SKILLS: </strong>
        </p>
+       <br />
+       <ul className="list-disc ml-2 mr-2 text-justify text-lg font-semibold"
+       data-aos="fade-up"
+       data-aos-duration="1000">
+        <li> <strong> Languages: </strong> JavaScript (including ES6+), Python, C, C++, HTML, CSS </li>
+        <li> <strong> Frameworks/Libraries: </strong> React (including JSX, hooks), Next.js, Node.js, Express.js, Bootstrap, Tailwind CSS </li>
+        <li> <strong> Databases: </strong> SQL (PostgreSQL, MySQL), NoSQL (MongoDB, Redis) </li>
+        <li> <strong> Other: </strong> Data visualization tool (Power BI), DevOps (GitHub), Agile methodologies, UI/UX design, Data Structures & Algorithms, Microsoft Office Suite, RESTful APIs, web performance optimization techniques  </li>
+       </ul>
+       
        
        <br />
        <br />
