@@ -6,6 +6,47 @@ import ExperienceCard from "@/components/experienceCard";
 
 const projects = [
   {
+    title: "Google Authentication App with Automated Welcome Email Integration",
+    features: [
+      "Implemented Google OAuth2 for secure and simplified user sign-in using Google accounts.",
+      "Automated welcome emails sent upon successful user authentication to enhance user engagement.",
+      "Utilized JWT (JSON Web Tokens) for managing secure and stateless authentication sessions.",
+      "Developed RESTful API endpoints with Node.js and Express.js, handling authentication flows and user data interactions.",
+      "Integrated Nodemailer with Gmail SMTP for sending emails, demonstrating email service configuration and management.",
+      "Frontend development with React.js and Next.js, hosted on Vercel for a responsive user interface.",
+      "Backend hosted on Render, showcasing skills in deploying and managing backend services in a production environment.",
+      "Focused on security best practices, including detailed error handling and secure session management.",
+      "Aimed to enhance skills in authentication, backend development, and integration of third-party services."
+  ],
+    image: "./googleAuthProject.png",
+    link: "https://google-authentication-project-frontend.vercel.app/",
+    skills: [
+      "Node.js",
+      "Express.js",
+      "React.js",
+      "Next.js",
+      "Nodemailer",
+      "JWT (jsonwebtoken)",
+      "MongoDB Atlas",
+      "Passport.js",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+      "Vercel",
+      "Render",
+      "passport-google-oauth20",
+      "jsonwebtoken",
+      "nodemailer",
+      "mongoose",
+      "dotenv",
+      "cors",
+      "morgan",
+      "express-session",
+      "bcryptjs"
+  ]
+  },
+  {
     title: "Web Portfolio with Next.js and Tailwind CSS",
     features: [
       'Responsive portfolio web application using Next.js and Tailwind CSS',
