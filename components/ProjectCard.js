@@ -55,7 +55,7 @@ const ProjectCard = ({ title, features, images, link, skills }) => {
           className="h-auto w-md ease-in-out transition-all duration-300 rounded-md filter grayscale hover:grayscale-0 hover:scale-105 cursor-default"
         /> */}
 
-      <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+      <div className="absolute flex mt-4 -translate-x-1/2 left-1/2 space-x-3 rtl:space-x-reverse">
         {images.map((_, index) => (
           <button
             key={index}
@@ -68,7 +68,7 @@ const ProjectCard = ({ title, features, images, link, skills }) => {
         ))}
       </div>
 
-      <button type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" onClick={goToPreviousSlide}>
+      <button type="button" className="absolute top-1/2 mt-5 flex items-center justify-center h-full cursor-pointer group focus:outline-none" onClick={goToPreviousSlide}>
         <span className="inline-flex items-center justify-center w-10 h-10 rounded-full">
           <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
             <path stroke="black" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1 1 5l4 4" />
@@ -77,7 +77,7 @@ const ProjectCard = ({ title, features, images, link, skills }) => {
         </span>
       </button>
 
-      <button type="button" className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" onClick={goToNextSlide}>
+      <button type="button" className="absolute right-0 flex text-right cursor-pointer group focus:outline-none" onClick={goToNextSlide}>
         <span className="inline-flex items-center justify-center w-10 h-10 rounded-full">
           <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4" />
