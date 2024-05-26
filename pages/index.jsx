@@ -4,7 +4,33 @@ import React from "react";
 import ProjectCard from "@/components/ProjectCard";
 import ExperienceCard from "@/components/experienceCard";
 
-const projects = [{
+const projects = [
+  {
+    title: "Airbnb Listings Clone",
+    features: [
+        "Frontend development using React and Next.js",
+        "Constructed UI for a Listings API",
+        "Implemented components such as navbar and page headers",
+        "Developed listing cards and listing details",
+        "Added pagination for navigating listings",
+        "Implemented loading cards during data fetch"
+    ],
+    images: ["./bnb1.png", "./bnb2.png"],
+    link: "https://airbnb-listings-clone.vercel.app/",
+    skills: [
+        "React",
+        "Next.js",
+        "UI",
+        "API",
+        "Components",
+        "Pagination",
+        "Git",
+        "Vercel",
+        "Frontend"
+    ]
+}
+,
+  {
   title: "Met Artwork Application with User Authentication and Data Persistence",
   features: [
       "User registration and login with JWT authentication",
