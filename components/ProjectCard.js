@@ -1,30 +1,96 @@
 // components/ProjectCard.js
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const ProjectCard = ({ title, features, image, link, skills }) => {
+const ProjectCard = ({ title, features, images, link, skills }) => {
   useEffect(() => {
     AOS.init();
   }, []);
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const goToPreviousSlide = () => {
+    const newIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const goToNextSlide = () => {
+    const newIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+  };
+
   return (
     <div
-      className="grid md:grid-cols-5 md:gap-4 justify-center"
+      className="grid md:grid-cols-6 md:gap-4 justify-center"
       data-aos="fade-left"
       data-aos-duration="1500"
     >
       <div
-        className="md:col-span-2 filter-none px-4 py-6 justify-center items-center"
+        className="md:col-span-3 filter-none px-4 py-14 justify-center items-center"
         data-aos="fade-up"
         data-aos-duration="1500"
       >
-        <img
+        <div className="relative w-full" data-carousel="slide">
+      <div className="relative h-80 overflow-hidden rounded-lg md:h-80">
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute block w-full h-full top-0 left-0 transition-opacity duration-700 ease-in-out ${currentIndex === index ? 'opacity-100' : 'opacity-0'}`}
+            style={{ transform: `translateX(${currentIndex === index ? 0 : 100}%)` }}
+          >
+            <img src={image} className="h-50 w-90% ease-in-out transition-all duration-300 rounded-md filter  hover:scale-110 cursor-default" alt={`Slide ${index + 1}`} />
+          </div>
+        ))}
+      </div>
+
+      {/* <img
           src={image}
           alt={title}
           className="h-auto w-md ease-in-out transition-all duration-300 rounded-md filter grayscale hover:grayscale-0 hover:scale-105 cursor-default"
-        />
+        /> */}
+
+      <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            type="button"
+            className={`w-3 h-3 rounded-full ${currentIndex === index ? 'bg-black' : 'bg-gray-400'}`}
+            aria-current={currentIndex === index}
+            aria-label={`Slide ${index + 1}`}
+            onClick={() => goToSlide(index)}
+          ></button>
+        ))}
+      </div>
+
+      <button type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" onClick={goToPreviousSlide}>
+        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full">
+          <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="black" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1 1 5l4 4" />
+          </svg>
+          <span className="sr-only">Previous</span>
+        </span>
+      </button>
+
+      <button type="button" className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" onClick={goToNextSlide}>
+        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full">
+          <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4" />
+          </svg>
+          <span className="sr-only">Next</span>
+        </span>
+      </button>
+    </div>
+
+
+
+
+        
       </div>
       <div className="md:col-span-3 row-span-1 text-left px-4 py-6">
         <h3 className="text-xl font-bold mb-2">{title}</h3>

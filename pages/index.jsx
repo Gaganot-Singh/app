@@ -4,46 +4,66 @@ import React from "react";
 import ProjectCard from "@/components/ProjectCard";
 import ExperienceCard from "@/components/experienceCard";
 
-const projects = [
+const projects = [{
+  title: "Met Artwork Application with User Authentication and Data Persistence",
+  features: [
+      "User registration and login with JWT authentication",
+      "Search and view artwork from the Metropolitan Museum of Art Collection API",
+      "Add and manage favorite artworks",
+      "View and manage search history",
+      "Backend: Node.js/Express.js API",
+      "Backend: Node.js/Express.js API",
+      "Persist user data in MongoDB Atlas",
+      "Route guarding for secure access to user data"
+  ],
+  images: ["./mus1.png", "./mus2.png", "./mus3.png","./mus4.png","./mus5.png"],
+  link: "https://museum-app.vercel.app/",
+  skills: [
+      "bcryptjs",
+      "Next.js",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "passport-jwt",
+      "Responsive",
+      "third-party API integration",
+      "Jotai",
+      "SWR",
+      "React Bootstrap",
+      "dotenv",
+      "ErrorHandling",
+      "Git"
+  ]
+}
+,
   {
     title: "Google Authentication App with Automated Welcome Email Integration",
     features: [
-      "Implemented Google OAuth2 for secure and simplified user sign-in using Google accounts.",
-      "Automated welcome emails sent upon successful user authentication to enhance user engagement.",
-      "Utilized JWT (JSON Web Tokens) for managing secure and stateless authentication sessions.",
-      "Developed RESTful API endpoints with Node.js and Express.js, handling authentication flows and user data interactions.",
-      "Integrated Nodemailer with Gmail SMTP for sending emails, demonstrating email service configuration and management.",
-      "Frontend development with React.js and Next.js, hosted on Vercel for a responsive user interface.",
-      "Backend hosted on Render, showcasing skills in deploying and managing backend services in a production environment.",
-      "Focused on security best practices, including detailed error handling and secure session management.",
-      "Aimed to enhance skills in authentication, backend development, and integration of third-party services."
-  ],
-    image: "./googleAuthProject.png",
+      "Google OAuth2 for secure sign-in",
+      "Automated welcome emails",
+      "JWT for authentication",
+      "RESTful API with Node.js/Express.js",
+      "Nodemailer for email (Gmail SMTP)",
+      "Frontend: React.js/Next.js on Vercel",
+      "Backend hosted on Render",
+      "Emphasized security",
+      "Focus: authentication, backend, third-party integration"
+    ],
+    images: ["./googleAuthProject.png", "./auth2.png", "./auth3.png" ],
     link: "https://google-authentication-project-frontend.vercel.app/",
     skills: [
       "Node.js",
       "Express.js",
-      "React.js",
       "Next.js",
       "Nodemailer",
       "JWT (jsonwebtoken)",
       "MongoDB Atlas",
       "Passport.js",
-      "JavaScript",
-      "HTML",
-      "CSS",
       "Tailwind CSS",
-      "Vercel",
-      "Render",
       "passport-google-oauth20",
-      "jsonwebtoken",
-      "nodemailer",
       "mongoose",
       "dotenv",
-      "cors",
-      "morgan",
-      "express-session",
-      "bcryptjs"
+      "cors"
   ]
   },
   {
@@ -54,7 +74,7 @@ const projects = [
       'Smooth animations using AOS library',
       'Unique layout with fixed header on left-hand side and movable right portion',
     ],
-    image: "./portfolio.png",
+    images: ["./portfolio.png", "./portfolio.png" ],
     link: "https://github.com/Gaganot-Singh/app",
     skills: ["Next.js", "Tailwind CSS", "AOS Library", "Responsive Design", "UI/UX Design"]
     },
@@ -70,7 +90,7 @@ const projects = [
         "Implemented login history tracking for user logins",
         "Utilized Tailwind CSS framework with DaisyUI plugin for responsive and aesthetically pleasing UI design"
       ],
-      image: "./toystore.png",
+      images: ["./toy2.png", "./toy3.png","./toy1.png","./toy4.png","./toy5.png","./toy6.png"],
       link: "https://toy-store-49to.onrender.com/",
       skills: [
       "Node.js",
@@ -98,7 +118,7 @@ const projects = [
       "Seamless online and offline functionality with Redis caching.",
       "Improved user experience by serving cached data and Reduced reliance on external APIs.",
     ],
-    image: "./movieapi.png",
+    images: ["./movieapi.png"],
     link: "https://github.com/Gaganot-Singh/api-movie-app",
     skills:  ["JavaScript (Node.js)", "Express", "Redis Client", "Axios", "Redis caching mechanism"]
   },
@@ -111,7 +131,7 @@ const projects = [
       "Integrated HTML forms with validation for adding courses and students.",
       "Designed user-friendly UI using HTML, CSS, and JavaScript."
     ],
-    image: "./enrollment.png",
+    images: ["./enrollment2.png", "./enrollment3.png", "./enrollment.png", "./enrollment1.png"],
     link: "https://enrollment-system-qe6k.onrender.com/",
     skills: [
       "Node.js",
@@ -129,11 +149,12 @@ const projects = [
 
 const HomePage = () => {
   return (
-      <div className="grid w-80% lg:mt-60">
+      <div className="grid w-80% lg:mt-20 ">
       <div className="mx-2 justify-center items-center" >
-       <h1 className="mb-4 text-4xl font-bold text-center">
+       <h1 className="mb-4 text-4xl font-bold text-center" id="about">
         About Me
        </h1>
+       <br />
        <br />
        <img
           src="./intro.png"
@@ -169,22 +190,24 @@ const HomePage = () => {
 
 
        
-       <div className="mx-2 mt-80">
+       <div className="mx-2 mt-80" id="projects">
       <h1 className="mb-4 text-4xl font-bold text-center">
         Technical Projects
         </h1>
+        <br/>
         {projects.map((project) => (
-          <ProjectCard title={project.title} image={project.image}  link={project.link} features={project.features} key={project.title} skills={project.skills} />
+          <ProjectCard title={project.title} images={project.images}  link={project.link} features={project.features} key={project.title} skills={project.skills} />
         ))}
         <br />
         </div>
         
 
 
-        <div className="mx-2 mt-80 mb-20">
+        <div className="mx-2 mt-80 mb-20" id="exp">
       <h1 className="mb-4 text-4xl font-bold text-center">
         Experience
         </h1>
+        <br/>
         <ExperienceCard
         companyName="Seneca Polytechnic – North York, ON"
         position="Peer Tutor (Part Time)"
