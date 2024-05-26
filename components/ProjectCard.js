@@ -44,7 +44,7 @@ const ProjectCard = ({ title, features, images, link, skills }) => {
             className={`absolute block w-full h-full top-0 left-0 transition-opacity duration-700 ease-in-out ${currentIndex === index ? 'opacity-100' : 'opacity-0'}`}
             style={{ transform: `translateX(${currentIndex === index ? 0 : 100}%)` }}
           >
-            <img src={image} className="h-50 w-90% ease-in-out transition-all duration-300 rounded-md filter  hover:scale-110 cursor-default" alt={`Slide ${index + 1}`} />
+            <img src={image} className="h-50 w-90% ease-in-out transition-all duration-300 rounded-md filter hover:scale-105 shadow-xl cursor-default" alt={`Slide ${index + 1}`} />
           </div>
         ))}
       </div>

@@ -81,15 +81,15 @@ const projects = [{
     {
       title: "TOY STORE",
       features: [
-        "Incorporated EJS template engine for rendering data from Postgres database",
-        "Integrated random quote feature from 'Quotable' API",
-        "Implemented partial views for common HTML elements like navbar",
-        "Rendered data sets using EJS, including a table for displaying toys data from Postgres",
-        "Added functionality for creating, updating, and deleting toys",
-        "Integrated user account management using MongoDB Atlas for authentication and sessions",
-        "Implemented login history tracking for user logins",
-        "Utilized Tailwind CSS framework with DaisyUI plugin for responsive and aesthetically pleasing UI design"
-      ],
+        "Used EJS for rendering data from Postgres",
+        "Integrated 'Quotable' API for random quotes",
+        "Implemented partial views for navbar",
+        "Rendered data sets and tables using EJS",
+        "CRUD functionality for toys data",
+        "User account management with MongoDB Atlas",
+        "Login history tracking",
+        "Responsive UI design with Tailwind CSS and DaisyUI"
+    ],
       images: ["./toy2.png", "./toy3.png","./toy1.png","./toy4.png","./toy5.png","./toy6.png"],
       link: "https://toy-store-49to.onrender.com/",
       skills: [
@@ -159,7 +159,7 @@ const HomePage = () => {
        <img
           src="./intro.png"
           alt="Intro Image"
-          className="h-32 w-32 mx-auto w-sm ease-in-out transition-all duration-300 rounded-md cursor-pointer filter grayscale hover:grayscale-0 hover:scale-105 cursor-default"
+          className="h-36 w-36 mx-auto hover:scale-110 cursor-default"
           data-aos="fade-up"
           data-aos-duration="2000"
         />
@@ -181,8 +181,6 @@ const HomePage = () => {
         <li> <strong> Databases: </strong> SQL (PostgreSQL, MySQL), NoSQL (MongoDB, Redis) </li>
         <li> <strong> Other: </strong> Data visualization tool (Power BI), DevOps (GitHub), Agile methodologies, UI/UX design, Data Structures & Algorithms, Microsoft Office Suite, RESTful APIs, web performance optimization techniques  </li>
        </ul>
-       
-       
        <br />
        <br />
        </div>
