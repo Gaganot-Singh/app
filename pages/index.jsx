@@ -100,7 +100,7 @@ const projects = [
       'Smooth animations using AOS library',
       'Unique layout with fixed header on left-hand side and movable right portion',
     ],
-    images: ["./portfolio.png", "./portfolio.png" ],
+    images: ["./portfolio.png" ],
     link: "https://github.com/Gaganot-Singh/app",
     skills: ["Next.js", "Tailwind CSS", "AOS Library", "Responsive Design", "UI/UX Design"]
     },
