@@ -12,6 +12,9 @@ export default function MainNav() {
             <li className="p-2 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer active">
             <a href="#about"><Button className='px-2 py-2'> ABOUT </Button></a>
             </li>
+            <li className="p-2 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer active">
+            <a href="#tech"><Button className='px-2 py-2'> SKILLS </Button></a>
+            </li>
             <li className="p-2 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer">
               <a href="#projects"><Button className='px-2 py-2'> PROJECTS </Button></a>
             </li>

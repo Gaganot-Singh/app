@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion"
 
 const Header = () => {
   return (
@@ -20,11 +21,21 @@ const Header = () => {
       </div>
       <br/>
       <div className="flex items-center justify-center">
-      <img
-        src="./profile_picture.jpg"
-        alt="Profile Picture"
-        className="rounded-full w-60 h-60 border-2 border-gray-900"
-      />
+      <motion.div
+        animate={{ scale: [1, 1.2, 1] }}  
+        transition={{
+          ease: "linear",
+          duration: 2,
+        }}
+      >
+        <img
+          src="./profile_picture.jpg"
+          alt="Profile Picture"
+          className="rounded-full w-60 h-60 border-2 border-gray-900"
+        />
+      </motion.div>
+
+
     </div>
     <br/>
       
