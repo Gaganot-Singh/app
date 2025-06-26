@@ -310,6 +310,22 @@ const HomePage = () => {
         </h1>
         <br/>
         <ExperienceCard
+  companyName="Ministry of Public and Business Service Delivery – Toronto, ON"
+  position="I&IT Co-Op – Web/Application Developer"
+  duration="Sep ’24 to Present"
+  responsibilities={[
+    "Developed and managed both the frontend and backend of GoCloud, a critical .NET-based enterprise web application used across the Ontario Public Service (OPS) for infrastructure and resource management.",
+    "Designed and maintained the frontend for a GenAI-based application and created a test project for GenAI API integration.",
+    "Built a CI/CD pipeline to automate deployment of the GenAI application.",
+    "Integrated cloud services and automated workflows using Azure resources such as Function Apps, Logic Apps, and Web App Services.",
+    "Utilized Microsoft Entra ID and Graph API to enable secure, data-driven functionality and improve system performance.",
+    "Developed and customized Power BI reports with drill-through features for enhanced data analysis and decision-making.",
+    "Implemented automated CI/CD pipelines for provisioning and managing Azure resources.",
+    "Worked extensively with SQL databases to support core application features and ensure data integrity."
+  ]}
+/>
+
+        <ExperienceCard
         companyName="Seneca Polytechnic – North York, ON"
         position="Peer Tutor (Part Time)"
         duration="Jan’24 to Present"
